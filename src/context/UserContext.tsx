@@ -1,4 +1,5 @@
 import { createContext,useState } from "react"
+// @ts-ignore 
 import {data} from "../data.js"
 import { User,PickUserContextProps } from "../types/type.js"
 
@@ -8,6 +9,7 @@ type Props = {
 }
 
 //exporting created context
+// @ts-ignore 
 export const Usercontext = createContext<PickUserContextProps>({});
 
 const UserContext = ({children}: Props) => {

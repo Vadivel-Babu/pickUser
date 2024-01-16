@@ -16,7 +16,9 @@ const Adduser = () => {
 
 
   useEffect(() =>{
+    // @ts-ignore 
     function handleClose(e) {
+      // @ts-ignore 
       if(!dropDownRef.current.contains(e.target)){
         setIsOpen(false);
       }
